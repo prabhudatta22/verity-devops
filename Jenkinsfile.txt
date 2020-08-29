@@ -34,6 +34,16 @@ pipeline {
                 }
             }
         }
+		
+		//Code starts for stage JaCoCo
+		stage('JaCoCo') {
+            steps {
+                sh 'mvn jacoco:report'
+            }
+        }
+		//Code ends for stage JaCoCo
+		
+		
 		// ******ALL CODE TO BE ADDED BELOW THIS COMMENT******
 		
 			
