@@ -42,6 +42,12 @@ pipeline {
             }
         }
 		//Code ends for stage JaCoCo
+		//Code starts for stage Install
+		stage('Install') {
+            steps {
+                sh 'mvn install -DskipTests'
+            }
+        }
 		
 		
 		// ******ALL CODE TO BE ADDED BELOW THIS COMMENT******
