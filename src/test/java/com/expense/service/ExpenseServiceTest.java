@@ -63,6 +63,7 @@ public class ExpenseServiceTest {
 		when(expenseRepository.findAll()).thenReturn(expenseList);
 
 		List<Expense> expenseList1 = expenseService.getExpense();
+		System.out.println("updated code !!!")
 		assertEquals(1, expenseList1.size());
 	}
 	
